@@ -1,0 +1,13 @@
+.single-post {
+    .hdln-1 {
+        @media (max-width: 768px) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.service-back-btn {
+    max-width: 48.75rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

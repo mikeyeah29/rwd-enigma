@@ -1,0 +1,78 @@
+/* Bootstrap
+=============================================*/
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+// @import "../../node_modules/bootstrap/scss/functions";
+//
+// // 2. Include any default variable overrides here
+//
+// // 3. Include remainder of required Bootstrap stylesheets
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/mixins";
+//
+// // 4. Include any optional Bootstrap components as you like
+// // @import "../../node_modules/bootstrap/scss/root";
+// @import "../../node_modules/bootstrap/scss/reboot";
+// @import "../../node_modules/bootstrap/scss/type";
+// @import "../../node_modules/bootstrap/scss/images";
+// @import "../../node_modules/bootstrap/scss/containers";
+// @import "../../node_modules/bootstrap/scss/grid";
+
+// 5. Add additional custom code here
+
+/* Custom Styles
+=============================================*/
+
+// Base styles
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/global';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utils';
+
+@import 'vendor/wp-overrides';
+@import 'vendor/bootstrap-overrides';
+@import 'vendor/everest-forms';
+@import 'vendor/simple-cookie-popup';
+
+// Layout styles
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/navigation';
+
+// Components
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/testimonial-slider';
+@import 'components/our-services';
+@import 'components/project-slider';
+@import 'components/pagination';
+@import 'components/cursor';
+
+// Blocks
+@import 'blocks/split-content-block';
+@import 'blocks/page-heading';
+@import 'blocks/article-list';
+@import 'blocks/post-meta';
+@import 'blocks/article-subtitle';
+@import 'blocks/content-image';
+@import 'blocks/contact-block';
+@import 'blocks/process-step';
+@import 'blocks/image-with-inline-caption';
+@import 'blocks/project-intro';
+@import 'blocks/project-gallery';
+@import 'blocks/before-after';
+@import 'blocks/two-column-image-text';
+
+// Page styles
+@import 'pages/home';
+@import 'pages/articles';
+@import 'pages/single';
+@import 'pages/testimonials';
+@import 'pages/survey';

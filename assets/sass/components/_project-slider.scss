@@ -1,0 +1,24 @@
+.project-slider {
+    padding-bottom: 5rem;
+    .hdln-1 {
+        margin-bottom: 6.25rem;
+    }
+    .project-slide {
+        padding: 0px 0.625rem;
+        text-decoration: none;
+        transition: 0.3s;
+        // &:hover {
+        //     transform: translateY(-1.25rem);
+        // }
+        &:hover p {
+            color: $color-red;
+        }
+    }
+    .project-image {
+        margin-bottom: 1.375rem;
+    }
+    p {
+        color: $color-dark;
+        transition: 0.3s;
+    }
+}

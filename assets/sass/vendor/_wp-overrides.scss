@@ -1,0 +1,9 @@
+.wp-block-columns {
+    gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .wp-block-columns {
+        gap: 1.25rem; /* Reduce the gap for smaller screens */
+    }
+}

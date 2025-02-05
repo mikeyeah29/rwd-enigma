@@ -1,0 +1,41 @@
+/* Masonry Grid */
+.masonry-grid {
+    column-count: 3;
+    gap: 1rem; /* Space between items */
+}
+
+.masonry-item {
+    break-inside: avoid; /* Prevent items from breaking */
+    overflow: hidden; /* Ensure proper rendering */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; /* Retain original aspect ratio */
+    display: block;
+    border-radius: 4px;
+}
+
+.post-categories {
+    li {
+        margin-top: 0.625rem;
+        &:not(:first-child) {
+            margin-left: 1.25rem;
+        }
+    }
+}
+
+.post-card {
+    margin-bottom: 3.75rem;
+    text-decoration: none;
+    a {
+        text-decoration: none;
+    }
+    h2 {
+        margin: 1.25rem 0px 0.625rem 0px;
+    }
+}
+
+.article-info {
+    margin-bottom: 2rem;
+}
