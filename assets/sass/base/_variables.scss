@@ -1,25 +1,37 @@
 /* Colours
 ============================================*/
-
 // Color Names
-$color-peach: #F9EFEB;
-$color-peach-dark: #F3E1D8;
+
+$color-primary-sage: #A7C4A0;
+$color-primary-blue: #2b5b6e;
+$color-primary-beige: #F5E9DA;
+$color-secondary-terracotta: #D4A373;
+$color-secondary-gold: #E8C872;
+$color-secondary-lavender: #C3A2E4;
+$color-background-charcoal: #4A4A4A;
+$color-background-mist: #ECECEC;
+$color-background-off-white: #FAF9F6;
+
 $color-dark: #2B2A35;
-$color-red: #FE1F0F;
-$color-white: #FFF;
-$color-black: #000;
 
 // Color Uses
-$primary-color: $color-peach;
-$secondary-color: $color-dark;
-$accent-color: $color-red;
+$primary-color: $color-primary-blue;
+$secondary-color: $color-secondary-terracotta;
+$accent-color: $color-secondary-gold;
 $color-text: $color-dark;
 
 /* Fonts
 ============================================*/
 
-$font-brand: "Universal Sans";
-$font-display: "Universal Sans";
+$font-astoria: astoria-sans, sans-serif;
+$font-solitas-condensed: solitas-serif-condensed, sans-serif;
+$font-solitas-normal: solitas-serif-normal, sans-serif;
+$font-solitas-extended: solitas-serif-extended, sans-serif;
+$font-lindsey: lindsey-signature, sans-serif;
+
+$font-logo: $font-lindsey;
+$font-brand: $font-solitas-normal;
+$font-display: $font-astoria;
 
 /* Layout / Spacing
 ============================================*/
@@ -43,13 +55,13 @@ $space-lg: 40px;
 
 // Desktop
 $font-size-small: 1.125rem; // 18px;
-$font-size-medium: 1.375rem; // 22px;
+$font-size-medium: 1.5rem; // 24px;
 $font-size-large: 2rem; // 32px;
-$font-size-xlarge: 2.25rem; // 36px;
+$font-size-xlarge: 3.125rem; // 50px;
 $font-size-xxlarge: 5rem; // 80px;
 // Mobile
 $font-size-small-mobile: 1rem; // 16px;
 $font-size-medium-mobile: 1.25rem; // 20px;
 $font-size-large-mobile: 1.75rem; // 28px;
-$font-size-xlarge-mobile: 1.875rem; // 30px;
+$font-size-xlarge-mobile: 2.25rem; // 36px;
 $font-size-xxlarge-mobile: 3.25rem; // 50px;

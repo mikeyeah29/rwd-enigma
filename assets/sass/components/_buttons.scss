@@ -1,9 +1,9 @@
 /* Button Base
 ====================================*/
 
-.c-btn {
+.rwd-btn {
     color: #fff;
-    background: $accent-color;
+    background: $primary-color;
     border-radius: 30px 30px 30px 30px;
     display: inline-block;
     font-size: $font-size-small;
@@ -11,15 +11,13 @@
     text-decoration: none;
 }
 
-.wp-element-button,
-.c-btn {
+.rwd-btn {
     position: relative;
     z-index: 1;
     transition: 0.4s;
 }
 
-.wp-element-button::before,
-.c-btn::before {
+.rwd-btn::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -27,50 +25,31 @@
     width: 0%;
     background: transparent;
     height: 100%;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 30px 30px 30px 30px;
     z-index: -1;
     transition: 0.4s;
 }
 
-.wp-element-button:hover,
-.c-btn:hover {
-    background: $color-peach-dark !important;
-    color: $accent-color;
-}
-
-.wp-element-button:hover:before,
-.c-btn:hover:before  {
+.rwd-btn:hover::before {
     width: 100%;
-    border-radius: 30px 30px 30px 30px;
+    background: darken($primary-color, 20%);
 }
 
-.wp-element-button.has-red-background-color:hover::before,
-.c-btn:hover::before {
-    // background: darken($accent-color, 20);
-    background: $color-peach-dark;
-}
-
-.wp-element-button.is-active,
-.c-btn.is-active {
-    background: $accent-color !important;
-    color: #fff !important;
-}
-
-/* Button Light
+/* Variations 
 ====================================*/
 
-.c-btn-light,
-.wp-element-button.has-peach-dark-background-color {
-    background: $color-peach-dark;
-    color: $color-red;
-}
-
-.c-btn-light:hover,
-.wp-element-button.has-peach-dark-background-color:hover {
-    color: #fff;
-}
-
-.wp-element-button.has-peach-dark-background-color:hover::before,
-.c-btn-light:hover::before {
+.rwd-btn--accent {
     background: $accent-color;
+    color: $color-text;
+}
+.rwd-btn--accent:hover::before {
+    background: darken($accent-color, 20%);
+}
+
+.rwd-btn--secondary {
+    background: $secondary-color;
+    color: $color-text;
+}
+.rwd-btn--secondary:hover::before {
+    background: darken($secondary-color, 20%);
 }

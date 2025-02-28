@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/* Bootstrap
+=============================================*/
+/* Custom Styles
+=============================================*/
+/* Colours
+============================================*/
+/* Fonts
+============================================*/
+/* Layout / Spacing
+============================================*/
+/* Font Sizes
+============================================*/
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #FAF9F6 !important;
+  font-family: astoria-sans, sans-serif;
+}
+
+img {
+  border-radius: 0.625rem;
+  width: 100%;
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.m-auto img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-portrait {
+  aspect-ratio: 3/4; /* Optional: Enforce a consistent aspect ratio */
+  object-fit: cover;
+}
+
+.img-landscape {
+  aspect-ratio: 3/2; /* Optional: Enforce a consistent aspect ratio */
+  object-fit: cover;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+p, li {
+  font-size: 1.5rem;
+  color: #2B2A35;
+  font-family: astoria-sans, sans-serif;
+  font-weight: 100;
+  line-height: 1.2em;
+}
+@media (max-width: 768px) {
+  p, li {
+    font-size: 1.25rem;
+  }
+}
+
+.hdln-1 {
+  font-size: 5rem;
+  font-family: solitas-serif-normal, sans-serif;
+  margin: 0px;
+  color: #2B2A35;
+}
+@media (max-width: 768px) {
+  .hdln-1 {
+    font-size: 3.25rem;
+  }
+}
+
+.hdln-2 {
+  font-size: 3.125rem;
+  font-family: solitas-serif-normal, sans-serif;
+  color: #2B2A35;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .hdln-2 {
+    font-size: 2.25rem;
+  }
+}
+
+.hdln-3 {
+  font-size: 2rem;
+  font-family: solitas-serif-normal, sans-serif;
+  color: #2B2A35;
+}
+@media (max-width: 768px) {
+  .hdln-3 {
+    font-size: 1.75rem;
+  }
+}
+
+.hdln-4 {
+  font-size: 1.5rem;
+  color: #2B2A35;
+}
+@media (max-width: 768px) {
+  .hdln-4 {
+    font-size: 1.25rem;
+  }
+}
+
+.txt-small {
+  font-size: 1.125rem;
+}
+@media (max-width: 768px) {
+  .txt-small {
+    font-size: 1rem;
+  }
+}
+
+.txt-medium {
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .txt-medium {
+    font-size: 1.25rem;
+  }
+}
+
+.txt-large {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .txt-large {
+    font-size: 1.75rem;
+  }
+}
+
+.txt-xlarge {
+  font-size: 3.125rem;
+}
+@media (max-width: 768px) {
+  .txt-xlarge {
+    font-size: 2.25rem;
+  }
+}
+
+.txt-xxlarge {
+  font-size: 5rem;
+}
+@media (max-width: 768px) {
+  .txt-xxlarge {
+    font-size: 3.25rem;
+  }
+}
+
+.txt-primary {
+  color: #2b5b6e;
+}
+
+.txt-secondary {
+  color: #D4A373;
+}
+
+.txt-accent {
+  color: #E8C872;
+}
+
+.bg-primary {
+  background-color: #2b5b6e;
+}
+
+.bg-secondary {
+  background-color: #D4A373;
+}
+
+.bg-accent {
+  background-color: #E8C872;
+}
+
+/* Custom Gutenberg colors */
+.has-primary-sage-color {
+  color: #A7C4A0;
+}
+
+.has-primary-sage-background-color {
+  background-color: #A7C4A0;
+}
+
+.has-primary-blue-color {
+  color: #2b5b6e;
+}
+
+.has-primary-blue-background-color {
+  background-color: #2b5b6e;
+}
+
+.has-primary-beige-color {
+  color: #F5E9DA;
+}
+
+.has-primary-beige-background-color {
+  background-color: #F5E9DA;
+}
+
+.has-secondary-terracotta-color {
+  color: #D4A373;
+}
+
+.has-secondary-terracotta-background-color {
+  background-color: #D4A373;
+}
+
+.has-secondary-gold-color {
+  color: #E8C872;
+}
+
+.has-secondary-gold-background-color {
+  background-color: #E8C872;
+}
+
+.has-secondary-lavender-color {
+  color: #C3A2E4;
+}
+
+.has-secondary-lavender-background-color {
+  background-color: #C3A2E4;
+}
+
+.has-background-charcoal-color {
+  color: #4A4A4A;
+}
+
+.has-background-charcoal-background-color {
+  background-color: #4A4A4A;
+}
+
+.has-background-mist-color {
+  color: #ECECEC;
+}
+
+.has-background-mist-background-color {
+  background-color: #ECECEC;
+}
+
+.has-background-off-white-color {
+  color: #FAF9F6;
+}
+
+.has-background-off-white-background-color {
+  background-color: #FAF9F6;
+}
+
+.has-dark-color {
+  color: #2B2A35;
+}
+
+.has-dark-background-color {
+  background-color: #2B2A35;
+}
+
+.spacer-small {
+  height: 1.25rem;
+} /* 20px */
+.spacer-medium {
+  height: 3.75rem;
+} /* 30px */
+.spacer-large {
+  height: 2.5rem;
+} /* 40px */
+.spacer-xlarge {
+  height: 3.125rem;
+} /* 50px */
+.spacer-xxlarge {
+  height: 4.688rem;
+} /* 75px */
+/* Example: Responsive Margins */
+@media (min-width: 768px) {
+  .spacer-small {
+    height: 2.5rem;
+  } /* 40px */
+  .spacer-medium {
+    height: 3.75rem;
+  } /* 60px */
+  .spacer-large {
+    height: 5rem;
+  } /* 80px */
+  .spacer-xlarge {
+    height: 6.25rem;
+  } /* 100px */
+  .spacer-xxlarge {
+    height: 8.125rem;
+  } /* 130px */
+}
+.aspect-ratio-standard {
+  aspect-ratio: 3/2; /* Maintains a 16:9 aspect ratio */
+  object-fit: cover;
+}
+
+.aspect-ratio-tall {
+  aspect-ratio: 0.67/1; /* Maintains a 16:9 aspect ratio */
+  object-fit: cover;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header-default {
+  padding: 30px 20px;
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.header-default.is-sticky {
+  position: fixed;
+  background: transparent;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.header-default__menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-default__menu li {
+  display: inline-block;
+}
+
+.header-default__menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: astoria-sans, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-left: 1.25rem;
+}
+
+.header-default__menu a:hover {
+  color: #ffffff;
+}
+
+.header-default__menu li:last-child a {
+  border: 1px solid #ffffff;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+}
+
+.header-default__logo h1 {
+  padding-top: 0.75rem;
+  color: #ffffff;
+  font-size: 2.625rem;
+  font-family: lindsey-signature, sans-serif;
+}
+
+.header-default__logo a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-default.has-scrolled {
+  background: rgba(43, 42, 53, 0.8392156863);
+  backdrop-filter: blur(1rem);
+  padding: 10px 20px;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #d4a373;
+}
+
+.footer .social-icons a {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* Button Base
+====================================*/
+.rwd-btn {
+  color: #fff;
+  background: #2b5b6e;
+  border-radius: 30px 30px 30px 30px;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  text-decoration: none;
+}
+
+.rwd-btn {
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+.rwd-btn::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  background: transparent;
+  height: 100%;
+  border-radius: 30px 30px 30px 30px;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.rwd-btn:hover::before {
+  width: 100%;
+  background: rgb(14.3333333333, 30.3333333333, 36.6666666667);
+}
+
+/* Variations 
+====================================*/
+.rwd-btn--accent {
+  background: #E8C872;
+  color: #2B2A35;
+}
+
+.rwd-btn--accent:hover::before {
+  background: rgb(209.7804878049, 162.1707317073, 34.2195121951);
+}
+
+.rwd-btn--secondary {
+  background: #D4A373;
+  color: #2B2A35;
+}
+
+.rwd-btn--secondary:hover::before {
+  background: rgb(172.131147541, 111.8852459016, 52.868852459);
+}
+
+.heading-group p {
+  margin-bottom: 0px;
+  font-family: "astoria-sans";
+  font-size: 22px;
+  font-weight: 100 !important;
+}
+.heading-group .hdln-2 {
+  font-size: 4.7rem;
+  font-family: "lindsey-signature";
+  color: #2b5b6e;
+}
+
+.hero-default {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-default__quote {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.hero-default__quote-text {
+  font-size: 3.625rem;
+  font-family: solitas-serif-normal, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-default__quote-author {
+  font-size: 1.5rem;
+  font-family: astoria-sans, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-section {
+  padding: 5rem 0;
+}
+.about-section .hdln-2 {
+  color: #2b5b6e;
+}
+.about-section li {
+  font-weight: 400;
+}
+.about-section .about-image-wrapper {
+  padding-right: 1.5rem;
+}
+
+.media-section {
+  padding: 5rem 0;
+  background: linear-gradient(45deg, black, #27383e);
+}
+
+.media-logos img {
+  height: 140px;
+  object-fit: contain;
+  /* width: 140px; */
+  margin: 0px auto;
+  /* background: aliceblue; */
+}
+
+.logo-slider {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slick-slide img {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  object-fit: contain;
+  margin: 0px 2rem;
+}
+
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  /* Optional */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio → (9/16 * 100) */
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.services-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #2c3e50;
+}
+
+.service-text h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-family: solitas-serif-normal, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

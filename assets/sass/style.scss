@@ -34,45 +34,37 @@
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/utils';
+@import 'base/animations';
 
-@import 'vendor/wp-overrides';
-@import 'vendor/bootstrap-overrides';
-@import 'vendor/everest-forms';
-@import 'vendor/simple-cookie-popup';
+// @import 'vendor/wp-overrides';
+// @import 'vendor/bootstrap-overrides';
+// @import 'vendor/everest-forms';
+// @import 'vendor/simple-cookie-popup';
 
-// Layout styles
-@import 'layout/header';
+// // Layout styles
+@import 'layout/header-default';
 @import 'layout/footer';
-@import 'layout/grid';
-@import 'layout/navigation';
+// @import 'layout/grid';
+// @import 'layout/navigation';
 
-// Components
+// // Components
 @import 'components/buttons';
-@import 'components/forms';
-@import 'components/testimonial-slider';
-@import 'components/our-services';
-@import 'components/project-slider';
-@import 'components/pagination';
-@import 'components/cursor';
+// @import 'components/forms';
+@import 'components/heading-group';
+// @import 'components/our-services';
+// @import 'components/project-slider';
+// @import 'components/pagination';
+// @import 'components/cursor';
 
-// Blocks
-@import 'blocks/split-content-block';
-@import 'blocks/page-heading';
-@import 'blocks/article-list';
-@import 'blocks/post-meta';
-@import 'blocks/article-subtitle';
-@import 'blocks/content-image';
-@import 'blocks/contact-block';
-@import 'blocks/process-step';
-@import 'blocks/image-with-inline-caption';
-@import 'blocks/project-intro';
-@import 'blocks/project-gallery';
-@import 'blocks/before-after';
-@import 'blocks/two-column-image-text';
+// // Blocks
+@import 'blocks/hero-default';
+@import 'blocks/about-section';
+@import 'blocks/media-section';
+@import 'blocks/services-section';
 
-// Page styles
-@import 'pages/home';
-@import 'pages/articles';
-@import 'pages/single';
-@import 'pages/testimonials';
-@import 'pages/survey';
+// // Page styles
+// @import 'pages/home';
+// @import 'pages/articles';
+// @import 'pages/single';
+// @import 'pages/testimonials';
+// @import 'pages/survey';

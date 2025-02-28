@@ -1,6 +1,6 @@
 <?php
 
-class Cherry_GutenbergSetup {
+class Rwd_Enigma_GutenbergSetup {
 
     /**
      * Blocks to wrap in a container.
@@ -26,34 +26,49 @@ class Cherry_GutenbergSetup {
     public function register_colors() {
         add_theme_support('editor-color-palette', array(
             array(
-                'name'  => __('Peach', 'mytheme'),
-                'slug'  => 'peach',
-                'color' => '#F9EFEB',
+                'name'  => __('Primary Sage', 'enigma'),
+                'slug'  => 'primary-sage',
+                'color' => '#A7C4A0',
             ),
             array(
-                'name'  => __('Peach Dark', 'mytheme'),
-                'slug'  => 'peach-dark',
-                'color' => '#F3E1D8',
+                'name'  => __('Primary Blue', 'enigma'),
+                'slug'  => 'primary-blue',
+                'color' => '#B0C4DE',
             ),
             array(
-                'name'  => __('Dark', 'mytheme'),
-                'slug'  => 'dark',
-                'color' => '#2B2A35',
+                'name'  => __('Primary Beige', 'enigma'),
+                'slug'  => 'primary-beige',
+                'color' => '#F5E9DA',
             ),
             array(
-                'name'  => __('Red', 'mytheme'),
-                'slug'  => 'red',
-                'color' => '#FE1F0F',
+                'name'  => __('Secondary Terracotta', 'enigma'),
+                'slug'  => 'secondary-terracotta',
+                'color' => '#D4A373',
             ),
             array(
-                'name'  => __('White', 'mytheme'),
-                'slug'  => 'white',
-                'color' => '#FFF',
+                'name'  => __('Secondary Gold', 'enigma'),
+                'slug'  => 'secondary-gold',
+                'color' => '#E8C872',
             ),
             array(
-                'name'  => __('Black', 'mytheme'),
-                'slug'  => 'black',
-                'color' => '#000',
+                'name'  => __('Secondary Lavender', 'enigma'),
+                'slug'  => 'secondary-lavender',
+                'color' => '#C3A2E4',
+            ),
+            array(
+                'name'  => __('Background Charcoal', 'enigma'),
+                'slug'  => 'background-charcoal',
+                'color' => '#4A4A4A',
+            ),
+            array(
+                'name'  => __('Background Mist', 'enigma'),
+                'slug'  => 'background-mist',
+                'color' => '#ECECEC',
+            ),
+            array(
+                'name'  => __('Background Off White', 'enigma'),
+                'slug'  => 'background-off-white',
+                'color' => '#FAF9F6',
             ),
         ));
 

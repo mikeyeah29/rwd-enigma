@@ -3,53 +3,44 @@
 @import 'base/fonts';
 @import 'base/mixins';
 
-// Editor-specific styles for blocks
+// // Editor-specific styles for blocks
 .editor-styles-wrapper {
 
     font-family: $font-display;
     background: $primary-color;
     padding: 0px 40px;
 
-    .wp-block-post-title {
-        margin-bottom: 60px;
-    }
+//     .wp-block-post-title {
+//         margin-bottom: 60px;
+//     }
 
     @import 'base/typography';
-    @import 'components/buttons';
     @import 'base/utils';
 
-    @import 'blocks/split-content-block';
-    @import 'blocks/page-heading';
-    @import 'blocks/article-list';
-    @import 'blocks/post-meta';
-    @import 'blocks/article-subtitle';
-    @import 'blocks/content-image';
-    @import 'blocks/contact-block';
-    @import 'blocks/process-step';
-    @import 'blocks/image-with-inline-caption';
-    @import 'blocks/project-intro';
-    @import 'blocks/project-gallery';
-    @import 'blocks/before-after';
-    @import 'blocks/two-column-image-text';
+    @import 'components/buttons';
 
-    .project-gallery-editor {
-        display: grid;
-        grid-template-columns: repeat(14, 1fr);
-        gap: 1rem;
-    }
+    @import 'blocks/hero-default';
+    @import 'blocks/about-section';
+    @import 'blocks/media-section';
 
-    .project-gallery-item {
-        border: 1px dashed #ccc;
-        padding: 1rem;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        min-height: 150px;
-    }
-}
+//     .project-gallery-editor {
+//         display: grid;
+//         grid-template-columns: repeat(14, 1fr);
+//         gap: 1rem;
+//     }
+
+//     .project-gallery-item {
+//         border: 1px dashed #ccc;
+//         padding: 1rem;
+//         background-size: cover;
+//         background-position: center;
+//         position: relative;
+//         min-height: 150px;
+//     }
+// }
 
 // .interface-navigable-region {
 //     h1, h2, h3 {
 //         font-family: $font-display;
 //     }
-// }
+}

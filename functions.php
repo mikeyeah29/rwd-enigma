@@ -14,14 +14,14 @@
 // use CherryTheme\Blocks\Two_Column_Image_Text_Block;
 
 // // Theme Setup
-// require_once get_stylesheet_directory() . '/inc/class-gutenberg-setup.php';
+require_once get_stylesheet_directory() . '/inc/class-gutenberg-setup.php';
 require_once get_stylesheet_directory() . '/inc/class-scripts.php';
 require_once get_stylesheet_directory() . '/inc/class-menus.php';
 require_once get_template_directory() . '/inc/customizer/class-customizer.php';
 // require_once get_stylesheet_directory() . '/inc/class-custom-post-types.php';
 // require_once get_stylesheet_directory() . '/inc/class-blocks.php';
 
-// new Cherry_GutenbergSetup();
+new Rwd_Enigma_GutenbergSetup();
 new Rwd_Enigma_Scripts();
 new Rwd_Enigma_Menus();
 Rwd_Enigma_Customizer::init();

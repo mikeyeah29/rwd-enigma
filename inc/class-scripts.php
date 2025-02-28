@@ -49,6 +49,7 @@ class Rwd_Enigma_Scripts {
 
         wp_enqueue_script( 'rellax-js', 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js', array('jquery'), '1.8.1', true );
         wp_enqueue_script( 'aio-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array('jquery'), '1.8.1', true );
+        wp_enqueue_script( 'rwd-enigma-js', get_stylesheet_directory_uri() . '/assets/js/rwd-enigma.js', array('jquery'), null, true);
         wp_enqueue_script( 'menu-js', get_stylesheet_directory_uri() . '/assets/js/menu.js', array('jquery'), null, true);
 
         if (is_front_page()) {

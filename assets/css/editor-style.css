@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/* Colours
+============================================*/
+/* Fonts
+============================================*/
+/* Layout / Spacing
+============================================*/
+/* Font Sizes
+============================================*/
+.editor-styles-wrapper {
+  font-family: astoria-sans, sans-serif;
+  background: #2b5b6e;
+  padding: 0px 40px;
+  /* Custom Gutenberg colors */
+  /* 20px */
+  /* 30px */
+  /* 40px */
+  /* 50px */
+  /* 75px */
+  /* Example: Responsive Margins */
+  /* Button Base
+  ====================================*/
+  /* Variations 
+  ====================================*/
+}
+.editor-styles-wrapper p, .editor-styles-wrapper li {
+  font-size: 1.5rem;
+  color: #2B2A35;
+  font-family: astoria-sans, sans-serif;
+  font-weight: 100;
+  line-height: 1.2em;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper p, .editor-styles-wrapper li {
+    font-size: 1.25rem;
+  }
+}
+.editor-styles-wrapper .hdln-1 {
+  font-size: 5rem;
+  font-family: solitas-serif-normal, sans-serif;
+  margin: 0px;
+  color: #2B2A35;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .hdln-1 {
+    font-size: 3.25rem;
+  }
+}
+.editor-styles-wrapper .hdln-2 {
+  font-size: 3.125rem;
+  font-family: solitas-serif-normal, sans-serif;
+  color: #2B2A35;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .hdln-2 {
+    font-size: 2.25rem;
+  }
+}
+.editor-styles-wrapper .hdln-3 {
+  font-size: 2rem;
+  font-family: solitas-serif-normal, sans-serif;
+  color: #2B2A35;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .hdln-3 {
+    font-size: 1.75rem;
+  }
+}
+.editor-styles-wrapper .hdln-4 {
+  font-size: 1.5rem;
+  color: #2B2A35;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .hdln-4 {
+    font-size: 1.25rem;
+  }
+}
+.editor-styles-wrapper .txt-small {
+  font-size: 1.125rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-small {
+    font-size: 1rem;
+  }
+}
+.editor-styles-wrapper .txt-medium {
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-medium {
+    font-size: 1.25rem;
+  }
+}
+.editor-styles-wrapper .txt-large {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-large {
+    font-size: 1.75rem;
+  }
+}
+.editor-styles-wrapper .txt-xlarge {
+  font-size: 3.125rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-xlarge {
+    font-size: 2.25rem;
+  }
+}
+.editor-styles-wrapper .txt-xxlarge {
+  font-size: 5rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-xxlarge {
+    font-size: 3.25rem;
+  }
+}
+.editor-styles-wrapper .txt-primary {
+  color: #2b5b6e;
+}
+.editor-styles-wrapper .txt-secondary {
+  color: #D4A373;
+}
+.editor-styles-wrapper .txt-accent {
+  color: #E8C872;
+}
+.editor-styles-wrapper .bg-primary {
+  background-color: #2b5b6e;
+}
+.editor-styles-wrapper .bg-secondary {
+  background-color: #D4A373;
+}
+.editor-styles-wrapper .bg-accent {
+  background-color: #E8C872;
+}
+.editor-styles-wrapper .has-primary-sage-color {
+  color: #A7C4A0;
+}
+.editor-styles-wrapper .has-primary-sage-background-color {
+  background-color: #A7C4A0;
+}
+.editor-styles-wrapper .has-primary-blue-color {
+  color: #2b5b6e;
+}
+.editor-styles-wrapper .has-primary-blue-background-color {
+  background-color: #2b5b6e;
+}
+.editor-styles-wrapper .has-primary-beige-color {
+  color: #F5E9DA;
+}
+.editor-styles-wrapper .has-primary-beige-background-color {
+  background-color: #F5E9DA;
+}
+.editor-styles-wrapper .has-secondary-terracotta-color {
+  color: #D4A373;
+}
+.editor-styles-wrapper .has-secondary-terracotta-background-color {
+  background-color: #D4A373;
+}
+.editor-styles-wrapper .has-secondary-gold-color {
+  color: #E8C872;
+}
+.editor-styles-wrapper .has-secondary-gold-background-color {
+  background-color: #E8C872;
+}
+.editor-styles-wrapper .has-secondary-lavender-color {
+  color: #C3A2E4;
+}
+.editor-styles-wrapper .has-secondary-lavender-background-color {
+  background-color: #C3A2E4;
+}
+.editor-styles-wrapper .has-background-charcoal-color {
+  color: #4A4A4A;
+}
+.editor-styles-wrapper .has-background-charcoal-background-color {
+  background-color: #4A4A4A;
+}
+.editor-styles-wrapper .has-background-mist-color {
+  color: #ECECEC;
+}
+.editor-styles-wrapper .has-background-mist-background-color {
+  background-color: #ECECEC;
+}
+.editor-styles-wrapper .has-background-off-white-color {
+  color: #FAF9F6;
+}
+.editor-styles-wrapper .has-background-off-white-background-color {
+  background-color: #FAF9F6;
+}
+.editor-styles-wrapper .has-dark-color {
+  color: #2B2A35;
+}
+.editor-styles-wrapper .has-dark-background-color {
+  background-color: #2B2A35;
+}
+.editor-styles-wrapper .spacer-small {
+  height: 1.25rem;
+}
+.editor-styles-wrapper .spacer-medium {
+  height: 3.75rem;
+}
+.editor-styles-wrapper .spacer-large {
+  height: 2.5rem;
+}
+.editor-styles-wrapper .spacer-xlarge {
+  height: 3.125rem;
+}
+.editor-styles-wrapper .spacer-xxlarge {
+  height: 4.688rem;
+}
+@media (min-width: 768px) {
+  .editor-styles-wrapper {
+    /* 40px */
+    /* 60px */
+    /* 80px */
+    /* 100px */
+    /* 130px */
+  }
+  .editor-styles-wrapper .spacer-small {
+    height: 2.5rem;
+  }
+  .editor-styles-wrapper .spacer-medium {
+    height: 3.75rem;
+  }
+  .editor-styles-wrapper .spacer-large {
+    height: 5rem;
+  }
+  .editor-styles-wrapper .spacer-xlarge {
+    height: 6.25rem;
+  }
+  .editor-styles-wrapper .spacer-xxlarge {
+    height: 8.125rem;
+  }
+}
+.editor-styles-wrapper .aspect-ratio-standard {
+  aspect-ratio: 3/2; /* Maintains a 16:9 aspect ratio */
+  object-fit: cover;
+}
+.editor-styles-wrapper .aspect-ratio-tall {
+  aspect-ratio: 0.67/1; /* Maintains a 16:9 aspect ratio */
+  object-fit: cover;
+}
+.editor-styles-wrapper .rwd-btn {
+  color: #fff;
+  background: #2b5b6e;
+  border-radius: 30px 30px 30px 30px;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  text-decoration: none;
+}
+.editor-styles-wrapper .rwd-btn {
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+.editor-styles-wrapper .rwd-btn::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  background: transparent;
+  height: 100%;
+  border-radius: 30px 30px 30px 30px;
+  z-index: -1;
+  transition: 0.4s;
+}
+.editor-styles-wrapper .rwd-btn:hover::before {
+  width: 100%;
+  background: rgb(14.3333333333, 30.3333333333, 36.6666666667);
+}
+.editor-styles-wrapper .rwd-btn--accent {
+  background: #E8C872;
+  color: #2B2A35;
+}
+.editor-styles-wrapper .rwd-btn--accent:hover::before {
+  background: rgb(209.7804878049, 162.1707317073, 34.2195121951);
+}
+.editor-styles-wrapper .rwd-btn--secondary {
+  background: #D4A373;
+  color: #2B2A35;
+}
+.editor-styles-wrapper .rwd-btn--secondary:hover::before {
+  background: rgb(172.131147541, 111.8852459016, 52.868852459);
+}
+.editor-styles-wrapper .hero-default {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editor-styles-wrapper .hero-default__quote {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.editor-styles-wrapper .hero-default__quote-text {
+  font-size: 3.625rem;
+  font-family: solitas-serif-normal, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.editor-styles-wrapper .hero-default__quote-author {
+  font-size: 1.5rem;
+  font-family: astoria-sans, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.editor-styles-wrapper .about-section {
+  padding: 5rem 0;
+}
+.editor-styles-wrapper .about-section .hdln-2 {
+  color: #2b5b6e;
+}
+.editor-styles-wrapper .about-section li {
+  font-weight: 400;
+}
+.editor-styles-wrapper .about-section .about-image-wrapper {
+  padding-right: 1.5rem;
+}
+.editor-styles-wrapper .media-section {
+  padding: 5rem 0;
+  background: linear-gradient(45deg, black, #27383e);
+}
+.editor-styles-wrapper .media-logos img {
+  height: 140px;
+  object-fit: contain;
+  /* width: 140px; */
+  margin: 0px auto;
+  /* background: aliceblue; */
+}
+.editor-styles-wrapper .logo-slider {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.editor-styles-wrapper .slick-slide img {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  object-fit: contain;
+  margin: 0px 2rem;
+}
+.editor-styles-wrapper .iframe-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  /* Optional */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio → (9/16 * 100) */
+}
+.editor-styles-wrapper .iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*# sourceMappingURL=editor-style.css.map */

@@ -4,38 +4,43 @@
 .txt-secondary { color: $secondary-color; }
 .txt-accent { color: $accent-color; }
 
+.bg-primary { background-color: $primary-color; }
+.bg-secondary { background-color: $secondary-color; }
+.bg-accent { background-color: $accent-color; }
+
 // WP Gutenburg Colours
 
 /* Custom Gutenberg colors */
-.has-peach-color { color: #F9EFEB; }
-.has-peach-background-color { background-color: #F9EFEB; }
 
-.has-peach-dark-color { color: $color-peach-dark; }
-.has-peach-dark-background-color { background-color: $color-peach-dark; }
+.has-primary-sage-color { color: $color-primary-sage; }
+.has-primary-sage-background-color { background-color: $color-primary-sage; }
 
-.has-dark-color { color: #2B2A35; }
-.has-dark-background-color { background-color: #2B2A35; }
+.has-primary-blue-color { color: $color-primary-blue; }
+.has-primary-blue-background-color { background-color: $color-primary-blue; }
 
-.has-red-color {
-    color: #FE1F0F;
-}
-.has-red-background-color {
-    background-color: #FE1F0F;
-}
+.has-primary-beige-color { color: $color-primary-beige; }
+.has-primary-beige-background-color { background-color: $color-primary-beige; }
 
-.has-white-color {
-    color: #FFF;
-}
-.has-white-background-color {
-    background-color: #FFF;
-}
+.has-secondary-terracotta-color { color: $color-secondary-terracotta; }
+.has-secondary-terracotta-background-color { background-color: $color-secondary-terracotta; }
 
-.has-black-color {
-    color: #000;
-}
-.has-black-background-color {
-    background-color: #000;
-}
+.has-secondary-gold-color { color: $color-secondary-gold; }
+.has-secondary-gold-background-color { background-color: $color-secondary-gold; }
+
+.has-secondary-lavender-color { color: $color-secondary-lavender; }
+.has-secondary-lavender-background-color { background-color: $color-secondary-lavender; }
+
+.has-background-charcoal-color { color: $color-background-charcoal; }
+.has-background-charcoal-background-color { background-color: $color-background-charcoal; }
+
+.has-background-mist-color { color: $color-background-mist; }
+.has-background-mist-background-color { background-color: $color-background-mist; }
+
+.has-background-off-white-color { color: $color-background-off-white; }
+.has-background-off-white-background-color { background-color: $color-background-off-white; }
+
+.has-dark-color { color: $color-dark; }
+.has-dark-background-color { background-color: $color-dark; }
 
 // Spacing
 .spacer-small { height: 1.25rem; } /* 20px */

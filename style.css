@@ -1,142 +1,14 @@
-body {
-    background-color: #FCFAF9;
-}
+/*
+Theme Name: Rwd Enigma
+Author: Rwd Enigma
+Author URI: https://rwdenigma.com
+Description: Rwd Enigma is a theme for the Rwd Enigma website.
+Version: 1.0.0
+*/
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: lindsey-signature, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 0px;
-    line-height: 1em;
-    color: #0B0A07;
-}
 
-.scribble {
-    font-family: lindsey-signature, sans-serif;
-}
 
-h2 {
-    font-family: "solitas-serif-normal", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 56px;
-        margin-bottom: 40px;
-}
-
-p, a, span {
-    /* font-family: "basic-sans", sans-serif;
-    font-weight: 400;
-    font-style: normal; */
-    /* font-family: "stevie-sans", sans-serif; */
-    font-family: "astoria-sans", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-}
-
-.header-default {
-    padding: 30px 20px;
-}
-
-.header-default.is-sticky {
-    position: fixed;
-    background: transparent;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    /* border-bottom: solid 1px #ffffff; */
-}
-
-.header-default__menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.header-default__menu li {
-    display: inline-block;
-}
-
-.header-default__menu a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: "astoria-sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    margin-left: 20px;
-}
-
-.header-default__menu a:hover {
-    color: #ffffff;
-}
-
-.header-default__menu li:last-child a {
-    border: 1px solid #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.header-default__logo h1 {
-    padding-top: 12px;
-    color: #ffffff;
-}
-
-.header-default__logo a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.hero-default {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-default__quote {
-    font-size: 58px;
-    font-family: "math";
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #ffffff;
-}
-
-.hero-default__quote-author {
-    font-size: 24px;
-    font-family: "astoria-sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    text-align: center;
-    color: #ffffff;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.section {
-    padding: 80px 0;
-    background: #FFEFBA;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #FFFFFF, #FFEFBA);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.bg-light-gray {
+/* .bg-light-gray {
     background-color: #f8f9fa;
 }
 
@@ -146,4 +18,64 @@ p, a, span {
 
 #media {
     background: #FCFAF9 !important;
+} */
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.footer {
+    background-color: #fff !important;
+    padding: 80px 0 !important;
+}
+
+.footer .legal-text {
+    font-size: 14px;
+    color: #000 !important;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.footer p { 
+    color: #000 !important;
+}
+
+.footer a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #d4a373 !important;
+}
+
+.footer form {
+    /* max-width: 400px;
+    margin: 20px auto; */
+}
+
+.footer input,
+.footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px #d4a373;
+}
+
+.footer button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #b8865b;
 }

@@ -1,0 +1,24 @@
+.about-section {
+
+    padding: 5rem 0;
+
+    // background: linear-gradient(to right, $color-background-mist, $color-primary-beige);
+    // background: linear-gradient(to right, $color-background-off-white, $color-secondary-terracotta);
+
+    // background: #ffefcc;
+
+    // background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+
+    .hdln-2 {
+        color: $primary-color;
+    }
+
+    li {
+        font-weight: 400;
+    }
+
+    .about-image-wrapper {
+        padding-right: 1.5rem;
+    }
+    
+}
