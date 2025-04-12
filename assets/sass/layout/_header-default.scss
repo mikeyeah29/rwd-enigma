@@ -1,7 +1,10 @@
 .header-default {
-    padding: 30px 20px;
+    padding: 20px 20px;
     transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
     z-index: 5;
+    .hamburger {
+        z-index: 11;
+    }
 }
 
 .header-default.is-sticky {
@@ -57,6 +60,45 @@
 .header-default.has-scrolled {
     background: #2b2a35d6;
         // background: #2b2a35d1;
-    backdrop-filter: blur(1rem);
+    // backdrop-filter: blur(1rem);
     padding: 10px 20px;
+}
+
+.header-default__menu-mobile-menu {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: -100%;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(43, 42, 53, 0.8392156863);
+    backdrop-filter: blur(1rem) !important;
+    z-index: 10;
+    transition: right 0.3s ease-in-out;
+    &.is-active {
+        right: 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0px 3rem;
+        margin: 0;
+        margin-top: 100px;
+        text-align: center;
+        li {
+            border-bottom: 1px solid;
+            margin-bottom: 1.25rem;
+            line-height: 1;
+            &:last-child {
+                border-bottom: none;
+            }
+            a {
+                color: #ffffff;
+                font-size: 2rem;
+                font-family: $font-display;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
 }

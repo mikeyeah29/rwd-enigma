@@ -1,3 +1,4 @@
+import './blocks/hero-default';
 // import './blocks/article-list';
 // import './blocks/post-meta';
 // import './blocks/process-step';

@@ -2,17 +2,17 @@
 ============================================*/
 // Color Names
 
-$color-primary-sage: #A7C4A0;
-$color-primary-blue: #2b5b6e;
-$color-primary-beige: #F5E9DA;
-$color-secondary-terracotta: #D4A373;
-$color-secondary-gold: #E8C872;
-$color-secondary-lavender: #C3A2E4;
-$color-background-charcoal: #4A4A4A;
-$color-background-mist: #ECECEC;
-$color-background-off-white: #FAF9F6;
+$color-primary-sage: var(--wp--preset--color--sage);
+$color-primary-blue: var(--wp--preset--color--blue);
+$color-primary-beige: var(--wp--preset--color--beige);
+$color-secondary-terracotta: var(--wp--preset--color--terracotta);
+$color-secondary-gold: var(--wp--preset--color--gold);
+$color-secondary-lavender: var(--wp--preset--color--lavender);
+$color-background-charcoal: var(--wp--preset--color--charcoal);
+$color-background-mist: var(--wp--preset--color--mist);
+$color-background-off-white: var(--wp--preset--color--off-white);
 
-$color-dark: #2B2A35;
+$color-dark: var(--wp--preset--color--dark);
 
 // Color Uses
 $primary-color: $color-primary-blue;

@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 .hero-default__quote {
@@ -14,12 +15,15 @@
 }
 
 .hero-default__quote-text {
-    font-size: 3.625rem;
+    font-size: 2.8rem;
     font-family: $font-brand;
     font-weight: 700;
     font-style: normal;
     text-align: center;
     color: #ffffff;
+    @media (min-width: 768px) {
+        font-size: 3.625rem;
+    }
 }
 
 .hero-default__quote-author {
@@ -29,4 +33,17 @@
     font-style: normal;
     text-align: center;
     color: #ffffff;
+}
+
+.hero-default__scroll-down {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    animation: bounce 2s infinite;
+    transition: transform 0.3s ease-in-out;
 }

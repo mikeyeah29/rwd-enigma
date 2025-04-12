@@ -1,17 +1,6 @@
 <?php get_header(); ?>
 
-<div class="hero-default" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('<?php echo get_template_directory_uri(); ?>/assets/img/hero-default.jpg') no-repeat center center; background-size: cover;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="hero-default__quote parallax">
-                    <p class="hero-default__quote-text">“The only way to make sense out of change is to plunge into it, move with it, and join the dance”</p>
-                    <p class="hero-default__quote-author">— Alan Watts</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php the_content(); ?>
 
 <?php get_template_part('template-parts/blocks/about-me'); ?>
 

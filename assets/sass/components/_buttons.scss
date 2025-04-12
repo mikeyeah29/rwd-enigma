@@ -32,7 +32,7 @@
 
 .rwd-btn:hover::before {
     width: 100%;
-    background: darken($primary-color, 20%);
+    // background: darken($primary-color, 20%);
 }
 
 /* Variations 
@@ -43,7 +43,7 @@
     color: $color-text;
 }
 .rwd-btn--accent:hover::before {
-    background: darken($accent-color, 20%);
+    // background: darken($accent-color, 20%);
 }
 
 .rwd-btn--secondary {
@@ -51,5 +51,5 @@
     color: $color-text;
 }
 .rwd-btn--secondary:hover::before {
-    background: darken($secondary-color, 20%);
+    // background: darken($secondary-color, 20%);
 }

@@ -45,6 +45,8 @@ class Rwd_Enigma_Scripts {
     public function enqueue_scripts() {
         // Enqueue Slick.js Script
         wp_enqueue_script( 'slick-js', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '1.8.1', true );
+        wp_enqueue_script( 'font-awesome', 'https://kit.fontawesome.com/5af35c474a.js', array('jquery'), '1.8.1', true );
+
         // wp_enqueue_script( 'rellax-js', get_stylesheet_directory_uri() . '/assets/js/rellax.js', array('jquery'), null, true);
 
         wp_enqueue_script( 'rellax-js', 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js', array('jquery'), '1.8.1', true );
