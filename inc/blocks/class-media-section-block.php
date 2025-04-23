@@ -2,7 +2,7 @@
 
 namespace RWDEnigma\Blocks;
 
-class Hero_Default_Block {
+class Media_Section_Block {
 
     var $theme_namespace = 'rwd-enigma';
 
@@ -12,14 +12,15 @@ class Hero_Default_Block {
     }
 
     public function register_block() {
-        register_block_type($this->theme_namespace . '/hero-default', [
+        register_block_type($this->theme_namespace . '/media-section', [
             'render_callback' => [$this, 'render_block'],
         ]);
     }
 
     public function render_block($attributes, $content, $block) {
         ob_start();
-        get_template_part('template-parts/blocks/hero-default', null, [
+
+        get_template_part('template-parts/blocks/media-section', null, [
             'attributes' => $attributes,
             'block' => $block
         ]);
@@ -27,4 +28,4 @@ class Hero_Default_Block {
     }
 }
 
-new Hero_Default_Block();
+new Media_Section_Block();

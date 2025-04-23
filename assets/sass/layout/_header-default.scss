@@ -1,7 +1,10 @@
 .header-default {
-    padding: 20px 20px;
+    padding: 20px 0px;
     transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
     z-index: 5;
+    @media (min-width: 768px) {
+        padding: 20px 20px;
+    }
     .hamburger {
         z-index: 11;
     }
@@ -61,7 +64,10 @@
     background: #2b2a35d6;
         // background: #2b2a35d1;
     // backdrop-filter: blur(1rem);
-    padding: 10px 20px;
+    padding: 10px 0px;
+    @media (min-width: 768px) {
+        padding: 10px 20px;
+    }
 }
 
 .header-default__menu-mobile-menu {
@@ -101,4 +107,16 @@
             }
         }
     }
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background: #ffffff;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background: #ffffff;
 }

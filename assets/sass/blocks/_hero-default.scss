@@ -44,6 +44,8 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    animation: bounce 2s infinite;
-    transition: transform 0.3s ease-in-out;
+    svg {
+        animation: bounce 2s infinite;
+        transition: transform 0.3s ease-in-out;
+    }
 }

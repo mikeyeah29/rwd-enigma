@@ -38,7 +38,7 @@
 
 @import 'vendor/burgers';
 // @import 'vendor/wp-overrides';
-// @import 'vendor/bootstrap-overrides';
+@import 'vendor/bootstrap-overrides';
 // @import 'vendor/everest-forms';
 // @import 'vendor/simple-cookie-popup';
 
@@ -50,7 +50,7 @@
 
 // // Components
 @import 'components/buttons';
-// @import 'components/forms';
+@import 'components/forms';
 @import 'components/heading-group';
 // @import 'components/our-services';
 // @import 'components/project-slider';
@@ -61,7 +61,10 @@
 @import 'blocks/hero-default';
 @import 'blocks/about-section';
 @import 'blocks/media-section';
+@import 'blocks/testimonials-section';
 @import 'blocks/services-section';
+@import 'blocks/contact-section';
+@import 'blocks/info-section';
 
 // // Page styles
 // @import 'pages/home';

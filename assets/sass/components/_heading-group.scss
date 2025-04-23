@@ -9,5 +9,8 @@
         font-size: 4.7rem;
         font-family: 'lindsey-signature';
         color: #2b5b6e;
+        @media (max-width: 767px) {
+            font-size: 3.6rem;
+        }
     }
 }

@@ -1,9 +1,20 @@
 .media-section {
 
     // padding: 10rem 0;
-    padding: 5rem 0;
+    // padding: 5rem 0;
     background: linear-gradient(45deg, black, #27383e);
     // margin-top: -10rem;
+
+    .slick-slide img {
+        // max-width: 150px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        object-fit: contain;
+        margin: 0px 2rem;
+    }
 
 }
 
@@ -34,17 +45,6 @@
 //     height: 100%;
 //     background: rgba(0, 0, 0, 0.5);
 // }
-
-.slick-slide img {
-    // max-width: 150px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90px;
-    object-fit: contain;
-    margin: 0px 2rem;
-}
 
 .iframe-wrapper {
     position: relative;

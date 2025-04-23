@@ -5,7 +5,10 @@
 .container-sm,
 .container-xl,
 .container-xxl {
-    padding: 0px 2.5rem;
+    // padding: 0px 2.5rem;
+    @media (max-width: 767px) {
+        padding: 0px 1.5rem;
+    }
 }
 
 .container-xxl {

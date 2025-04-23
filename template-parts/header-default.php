@@ -14,6 +14,12 @@ $header_text_color_class = ($header_text_color) ? 'has-' . $header_text_color . 
 
 $apply_blur_background = ($header_blur_background && !$header_bg_on_scroll) ? true : false;
 
+$header_title = get_bloginfo('name');
+
+if(is_singular('demo')) {
+    $header_title = get_the_title();
+}
+
 ?>
 
 <header class="header-default <?php echo true ? 'is-sticky' : ''; ?> <?php echo ( !$header_bg_on_scroll ? $header_bg_color_class : '' ); ?> <?php echo ( $apply_blur_background ? 'blur-background' : '' ); ?>">
@@ -26,7 +32,7 @@ $apply_blur_background = ($header_blur_background && !$header_bg_on_scroll) ? tr
                     <?php if (has_custom_logo()) : ?>
                         <?php the_custom_logo(); ?>
                     <?php else : ?>
-                        <h1 class="<?php echo $header_text_color_class; ?>"><?php bloginfo('name'); ?></h1>
+                        <h1 class="<?php echo $header_text_color_class; ?>"><?php echo $header_title; ?></h1>
                     <?php endif; ?>
                 </a>
             </div>

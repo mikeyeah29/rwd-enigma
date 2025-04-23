@@ -1,3 +1,7 @@
-const rellax = new Rellax('.parallax');
+const rellax = new Rellax('.parallax', {
+    center: true
+});
 
-AOS.init();
+AOS.init({
+    startEvent: 'load'
+});

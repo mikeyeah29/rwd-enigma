@@ -60,6 +60,19 @@ class Rwd_Enigma_Scripts {
     }
 
     public function enqueue_block_editor_assets() {
+
+        // Fonts
+        $google_fonts_url = get_theme_mod('google_fonts_url', '');
+        $adobe_fonts_url = get_theme_mod('adobe_fonts_url', '');
+
+        if ($google_fonts_url) {
+            wp_enqueue_style('google-fonts', esc_url($google_fonts_url));
+        }
+
+        if ($adobe_fonts_url) {
+            wp_enqueue_style('adobe-fonts', esc_url($adobe_fonts_url));
+        }
+
         // Enqueue Bootstrap CSS for the editor
         wp_enqueue_style(
             'enigma-bootstrap-editor',

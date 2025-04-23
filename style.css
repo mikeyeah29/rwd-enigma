@@ -35,7 +35,6 @@ html {
     font-size: 14px;
     color: #000 !important;
     margin-bottom: 0px;
-    margin-top: 40px;
 }
 
 .footer p { 
@@ -49,11 +48,6 @@ html {
 
 .footer a:hover {
     color: #d4a373 !important;
-}
-
-.footer form {
-    /* max-width: 400px;
-    margin: 20px auto; */
 }
 
 .footer input,

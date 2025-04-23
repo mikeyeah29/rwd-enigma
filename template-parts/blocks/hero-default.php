@@ -19,7 +19,7 @@ $author = $attributes['author'] ?? '— Alan Watts';
                     <p class="hero-default__quote-text"><?php echo $quote; ?></p>
                     <p class="hero-default__quote-author"><?php echo $author; ?></p>
                 </div>
-                
+
                 <div class="hero-default__scroll-down">
                     <?php get_template_part('template-parts/svgs/chevron-down', null, ['color' => '#ffffff']); ?>
                 </div>

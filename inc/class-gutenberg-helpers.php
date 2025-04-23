@@ -1,6 +1,6 @@
 <?php
 
-class RWDStarter_GutenbergHelpers {
+class RWD_Enigma_GutenbergHelpers {
 
     static private function parse_padding($padding) {
         // Use explode to split the string
@@ -9,14 +9,16 @@ class RWDStarter_GutenbergHelpers {
         return end($parts);
     }
 
-    static public function get_padding_classes($style) {
+    static public function get_padding_classes($attributes, $defaultClass = '') {
+
+        $style = $attributes['style'] ?? [];
 
         if (!isset($style['spacing']) || !$style['spacing']) {
-            return '';
+            return $defaultClass;
         }
 
         if (!isset($style['spacing']['padding']) || !$style['spacing']['padding']) {
-            return '';
+            return $defaultClass;
         }
 
         $padding_top = isset($style['spacing']['padding']['top']) ? $style['spacing']['padding']['top'] : 0;
@@ -41,23 +43,19 @@ class RWDStarter_GutenbergHelpers {
         
     }
 
+    static public function get_text_color_class($attributes, $defaultColor = '') {
+        $textColor = $attributes['textColor'] ?? $defaultColor;
+        $textColorClass = !empty($textColor) ? 'has-' . sanitize_title($textColor) . '-color' : '';
 
-    static public function get_text_color_class($attributes) {
-        $textColor = $attributes['textColor'] ?? null;
-
-        if(!$textColor) {
-            return '';
-        }
-
-        return 'has-' . sanitize_title($textColor) . '-color';
+        return $textColorClass;
     }
 
-    static public function get_background_color_class($attributes) {
-        $bgColor = $attributes['backgroundColor'] ?? null;
+    static public function get_background_color_class($attributes, $defaultColor = '') {
 
-        if(!$bgColor) {
-            return '';
-        }
+        $bgColor = $attributes['backgroundColor'] ?? $defaultColor;
+        $bgColorClass = !empty($bgColor) ? 'has-' . sanitize_title($bgColor) . '-background-color' : '';
+
+        return $bgColorClass;
     }
 
     static public function get_color_classes($attributes, $defaultColor = '') {
@@ -65,8 +63,8 @@ class RWDStarter_GutenbergHelpers {
         $bgColor = $attributes['backgroundColor'] ?? $defaultColor;
         $textColor = $attributes['textColor'] ?? $defaultColor;
 
-        $bgColorClass = !empty($bgColor) ? 'has-' . sanitize_title($bgColor) . '-background-color' : '';
-        $textColorClass = !empty($textColor) ? 'has-' . sanitize_title($textColor) . '-color' : '';
+        $bgColorClass = self::get_background_color_class($attributes, $defaultColor);
+        $textColorClass = self::get_text_color_class($attributes, $defaultColor);
 
         return $bgColorClass . ' ' . $textColorClass;
 

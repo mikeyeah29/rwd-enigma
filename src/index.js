@@ -1,12 +1,7 @@
 import './blocks/hero-default';
-// import './blocks/article-list';
-// import './blocks/post-meta';
-// import './blocks/process-step';
-// import './blocks/article-subtitle';
-// import './blocks/content-image';
-// import './blocks/contact-block';
-// import './blocks/image-with-inline-caption';
-// import './blocks/project-intro';
-// import './blocks/project-gallery';
-// import './blocks/before-after';
-// import './blocks/two-column-image-text';
+import './blocks/about-me';
+import './blocks/media-section';
+import './blocks/service-tags';
+import './blocks/info-section';
+import './blocks/contact-section';
+import './blocks/testimonials-section';
